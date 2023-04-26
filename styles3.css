@@ -1,0 +1,138 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+}
+
+/* Header styles */
+header {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  color: #3a7bd5;
+  font-size: 2rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Section styles */
+section {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #3a7bd5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+section h2::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #3a7bd5;
+}
+
+/* Services list styles */
+section ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+section li {
+  flex: 1;
+  margin-bottom: 1.5rem;
+  min-width: calc(33.33% - 1rem);
+  background-color: #f1f1f1;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+section li:hover {
+  transform: translateY(-5px);
+}
+
+section li h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #3a7bd5;
+}
+
+/* Reasons list styles */
+section ol {
+  list-style-type: decimal;
+  padding-left: 1rem;
+}
+
+/* Call-to-action button styles */
+button {
+  background-color: #3a7bd5;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 
+
+  /* Scroll to top button styles */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3a7bd5;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 999;
+  }
+  
+  #scrollToTop:hover {
+    background-color: #2e62a1;
+  }
+  
