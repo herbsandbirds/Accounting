@@ -2,8 +2,8 @@ backend:
   name: github
   repo: herbsandbirds/Accounting
   branch: main
-media_folder: "static/img"
-public_folder: "/img"
+  base_url: https://legendary-centaur-f6a4a4.netlify.app
+  auth_endpoint: /auth
 
 collections:
   - name: "blog"
