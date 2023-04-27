@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: herbsandbirds
+  repo: Accounting
   branch: main
 
 media_folder: "static/img"
