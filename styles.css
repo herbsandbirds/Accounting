@@ -137,14 +137,7 @@ body {
     color: #ffffff;
   }
   
-  footer.bg-light.py-3 {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-  }
-
+  
 
 /* Custom card header */
 .bg-custom {
@@ -181,9 +174,12 @@ html, body {
   flex-direction: column;
 }
 
+
 .content {
   flex: 1 0 auto;
+  padding-bottom: 60px; /* Adjust this value based on the height of your footer */
 }
+
 
 
 .certification-logos {
@@ -303,3 +299,26 @@ html, body {
   padding: 20px;
   border-radius: 4px;
 }
+
+/* Add a z-index to the buttons container */
+.text-center.my-4 {
+  z-index: 1000;
+  position: relative;
+}
+
+
+footer.bg-light.py-3 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.main-content-wrapper {
+  min-height: calc(100vh - 60px); /* Adjust the "60px" value to match the height of your navbar + footer */
+  display: flex;
+  flex-direction: column;
+}
+
+

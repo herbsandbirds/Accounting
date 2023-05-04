@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="description" content="Ullah and Associates is a leading Chartered Accountant firm in Huddersfield, West Yorkshire, offering tax planning, financial consulting, bookkeeping, and more. Contact us for a consultation.">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ullah and Associates Chartered Accountants</title>
@@ -22,7 +23,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="Images/Ullah_Sign.png" alt="Your Logo" /></a>
+      <a class="navbar-brand" href="#"><img src="Images/Ullah_Sign.png" alt="Ullah Chartered Accountants" /></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,6 +51,7 @@
   </nav>
 
   <main class="content">
+    <div class="content" id="main-content">
     <div class="container">
       <h1 class="text-center">VAT Services</h1>
       <p>Our VAT services are designed to make your business's VAT compliance a breeze. We handle the complexities of VAT registration, return preparation, and submission while you focus on growing your business.</p>
@@ -94,11 +96,12 @@
         <a href="contact.html" class="btn btn-custom">Contact Us for a Consultation</a>
       </div>
     </div>
+    </div>
   </main>
 
 
 
-  <footer class="bg-light py-3">
+  <footer class="bg-light py-3" id="floating-footer">
     <div class="container">
       <div class="row">
         <div class="col-md-4 d-flex align-items-center">
@@ -119,5 +122,18 @@
     </div>
 </footer>
 
+
+<script>
+  function adjustContentPadding() {
+    const footer = document.getElementById("floating-footer");
+    const mainContent = document.getElementById("main-content");
+    const footerHeight = footer.offsetHeight;
+
+    mainContent.style.paddingBottom = footerHeight + "px";
+  }
+
+  window.addEventListener("load", adjustContentPadding);
+  window.addEventListener("resize", adjustContentPadding);
+</script>
 </body>
 </html>
